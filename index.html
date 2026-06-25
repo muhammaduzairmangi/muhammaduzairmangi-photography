@@ -305,16 +305,15 @@
     }
     .img-slot:hover img { transform: scale(1.05); filter: grayscale(0%); }
 
-    <!-- ─── EXPERIENCE ───────────────────────────────────────── -->
+   <!-- EXPERIENCE -->
 <section id="experience" style="padding:8rem 3rem;border-top:1px solid #111;">
   <div class="section-header reveal">
     <span class="section-label">003 — Experience</span>
-    <span class="section-count">The  Behind the Work</span>
+    <span class="section-count">The Work Behind the Work</span>
   </div>
 
   <div style="max-width:760px;margin-top:1rem;">
 
-    <!-- Role 1 -->
     <div class="reveal" style="padding:3.5rem 0;border-bottom:1px solid #111;display:grid;grid-template-columns:1fr 2fr;gap:4rem;align-items:start;">
       <div>
         <p style="font-size:0.55rem;letter-spacing:0.3em;text-transform:uppercase;color:#333;margin-bottom:0.8rem;">Current</p>
@@ -335,7 +334,6 @@
       </div>
     </div>
 
-    <!-- Role 2 -->
     <div class="reveal" style="padding:3.5rem 0;border-bottom:1px solid #111;display:grid;grid-template-columns:1fr 2fr;gap:4rem;align-items:start;">
       <div>
         <p style="font-size:0.55rem;letter-spacing:0.3em;text-transform:uppercase;color:#333;margin-bottom:0.8rem;">2024 — 2025</p>
@@ -356,7 +354,6 @@
       </div>
     </div>
 
-    <!-- Role 3 -->
     <div class="reveal" style="padding:3.5rem 0;border-bottom:1px solid #111;display:grid;grid-template-columns:1fr 2fr;gap:4rem;align-items:start;">
       <div>
         <p style="font-size:0.55rem;letter-spacing:0.3em;text-transform:uppercase;color:#333;margin-bottom:0.8rem;">2024</p>
@@ -381,7 +378,6 @@
       </div>
     </div>
 
-    <!-- Recognition -->
     <div class="reveal" style="padding:3.5rem 0;display:grid;grid-template-columns:1fr 2fr;gap:4rem;align-items:start;">
       <div>
         <p style="font-size:0.55rem;letter-spacing:0.3em;text-transform:uppercase;color:#333;margin-bottom:0.8rem;">Recognition</p>
@@ -621,6 +617,10 @@
   .work-grid { columns: 2; }
   footer { flex-direction: column; gap: 1.5rem; align-items: flex-start; }
   .hero-scroll { display: none; }
+  #experience .reveal[style*="grid-template-columns"] { 
+  grid-template-columns: 1fr; 
+  gap: 1.5rem; 
+}
 }
     @media (max-width: 480px) {
       .work-grid { columns: 1; }
